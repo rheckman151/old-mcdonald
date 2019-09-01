@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OldMcdonald</title>
+    <title>Old Macdonald</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,28 @@
   </head>
 
   <body>
+    <header class="row">
+      <div class="col-3">
+        <div class="circle">
+        <br />
+        E.I.E.I.O
+        <br />
+      </div>
+      </div>
+      <div class="col-4 slogan">
+        Old Macdonald had many animals on his farm...
+      </div>
+      <div class="col-5 links">
+        <%= link_to 'New Animal', '#' %>
+        <%= link_to 'About Old Macdonald', '#' %>
+      </div>
+    </header>
+
+    <hr />
+
+    <br class="clear" />
+
     <%= yield %>
+
   </body>
 </html>
